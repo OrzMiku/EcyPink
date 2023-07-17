@@ -1,5 +1,6 @@
 <template>
     <div class="app">
+        <Miku />
         <h1>友情链接</h1>
         <gg />
         <template v-for="item in links" :key="item">
@@ -12,6 +13,7 @@
 import { defineAsyncComponent } from 'vue';
 const LinkCard = defineAsyncComponent(() => import('./components/LinkCard.vue'))
 const gg = defineAsyncComponent(() => import('./components/gg.vue'))
+const Miku = defineAsyncComponent(() => import('./components/Miku.vue'));
 import links from './data/links'
 </script>
 
