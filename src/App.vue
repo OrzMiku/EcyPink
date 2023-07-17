@@ -9,10 +9,10 @@
 </template>
 
 <script setup>
-import LinkCard from './components/LinkCard.vue';
-import gg from './components/gg.vue';
+import { defineAsyncComponent } from 'vue';
+const LinkCard = defineAsyncComponent(() => import('./components/LinkCard.vue'))
+const gg = defineAsyncComponent(() => import('./components/gg.vue'))
 import links from './data/links'
-console.log(links)
 </script>
 
 <style  scoped>
