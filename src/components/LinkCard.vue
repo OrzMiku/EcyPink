@@ -57,7 +57,17 @@ const goto = () => {
     color: white;
 }
 
+.link-card:focus {
+
+    background-color: #505050;
+    color: white;
+}
+
 .link-card:hover>.body {
+    color: white;
+}
+
+.link-card:focus>.body {
     color: white;
 }
 </style>
