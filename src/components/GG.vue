@@ -1,6 +1,6 @@
 <template>
     <div class="gg">
-        网站没时间管，暂时关了。
+        <slot></slot>
     </div>
 </template>
 
