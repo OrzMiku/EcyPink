@@ -10,6 +10,7 @@
 
 <style scoped>
 .gg {
+    background-color: #f3f3f3;
     margin: 10px 0;
     border-left: 5px solid #505050;
     padding: 10px;
@@ -17,6 +18,6 @@
 }
 
 .gg:hover {
-    background-color: #eeeeee;
+    background-color: #f7f7f7;
 }
 </style>
