@@ -15,7 +15,7 @@ import { getSetu } from '../utils/setu'
 import { isR18 } from '../utils/params'
 const setu = ref("");
 const r18 = isR18();
-console.log(r18);
+console.log("R18: " + r18);
 getSetu(r18).then((value => setu.value = value.pics))
 function update() {
     setu.value = "";
