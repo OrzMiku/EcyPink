@@ -36,6 +36,7 @@ import tags from '../data/tags'
 
 <style scoped>
 .head {
+    display: flex;
     background: #505050;
     height: 128px;
     border-bottom: 3px solid #505050;
@@ -43,7 +44,6 @@ import tags from '../data/tags'
 }
 
 .head>.logo {
-    float: left;
     background: url(https://q1.qlogo.cn/g?b=qq&nk=2475539124&s=640) no-repeat;
     background-size: cover;
     height: 128px;
@@ -51,10 +51,11 @@ import tags from '../data/tags'
 }
 
 .head>.profiles {
+    flex: auto;
+    width: 20px;
     box-sizing: border-box;
     padding: 20px;
     color: white;
-    float: left;
 }
 
 .head>.profiles>.title {
