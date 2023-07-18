@@ -12,11 +12,14 @@
 <script setup>
 import { ref } from 'vue';
 import { getSetu } from '../utils/setu'
+import { isR18 } from '../utils/params'
 const setu = ref("");
-getSetu().then((value => setu.value = value.pics))
+const r18 = isR18();
+console.log(r18);
+getSetu(r18).then((value => setu.value = value.pics))
 function update() {
     setu.value = "";
-    getSetu().then((value => setu.value = value.pics))
+    getSetu(r18).then((value => setu.value = value.pics))
 }
 </script>
 
