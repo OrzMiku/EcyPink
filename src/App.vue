@@ -19,12 +19,13 @@ const GG = defineAsyncComponent(() => import('./components/GG.vue'))
 const Miku = defineAsyncComponent(() => import('./components/Miku.vue'));
 const Links = defineAsyncComponent(() => import('./views/Links.vue'));
 const Setu = defineAsyncComponent(() => import('./views/Setu.vue'));
+const About = defineAsyncComponent(() => import('./views/About.vue'));
 const hitokoto = defineAsyncComponent(() => import('./components/Hitokoto.vue'));
 const Footer = defineAsyncComponent(() => import('./components/Footer.vue'));
 const Nav = defineAsyncComponent(() => import('./components/Nav.vue'));
 import navs from './data/navs'
 import links from './data/links'
-const pages = [Links, Setu];
+const pages = [About, Links, Setu];
 const currentActivePage = shallowRef(pages[0]);
 function changePage(index) {
     currentActivePage.value = pages[index];

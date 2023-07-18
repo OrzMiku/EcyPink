@@ -1,5 +1,8 @@
 export default [
     {
+        text: "关于"
+    },
+    {
         text: "友情链接"
     },
     {
