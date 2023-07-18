@@ -52,7 +52,7 @@ import tags from '../data/tags'
 
 .head>.profiles {
     flex: auto;
-    width: 20px;
+    width: 128px;
     box-sizing: border-box;
     padding: 20px;
     color: white;
@@ -62,6 +62,18 @@ import tags from '../data/tags'
     font-size: 28px;
     border-bottom: 3px solid white;
     margin-bottom: 5px;
+}
+
+@media screen and (max-width: 512px) {
+    .head>.profiles>.title {
+        font-size: 23px;
+        border-bottom: 3px solid white;
+        margin-bottom: 5px;
+    }
+
+    .head>.profiles>.subtitle {
+        font-size: small;
+    }
 }
 
 .description {
