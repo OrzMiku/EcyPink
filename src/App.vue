@@ -6,6 +6,15 @@
         <GG>
             <hitokoto />
         </GG>
+        <GG>
+            <p>
+                关注 <a href="https://space.bilibili.com/517141742">BiliBili@尹阿泡Apo</a> 喵。
+            </p>
+            <p>
+                关注 <a href="https://space.bilibili.com/517141742">BiliBili@尹阿泡Apo</a> 谢谢喵。
+            </p>
+            一起玩剑三加QQ群748860669。
+        </GG>
         <KeepAlive>
             <component :is="currentActivePage" :links="links"></component>
         </KeepAlive>
@@ -37,5 +46,12 @@ function changePage(index) {
     max-width: 720px;
     padding: 20px;
     margin: auto;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: #39c5bb;
 }
 </style>
