@@ -44,14 +44,14 @@ import tags from '../data/tags'
 }
 
 .head>.logo {
+    flex: 0 0 auto;
     background: url(https://q1.qlogo.cn/g?b=qq&nk=2475539124&s=640) no-repeat;
     background-size: cover;
-    height: 128px;
     width: 128px;
 }
 
 .head>.profiles {
-    flex: auto;
+    flex: 1;
     width: 128px;
     box-sizing: border-box;
     padding: 20px;
