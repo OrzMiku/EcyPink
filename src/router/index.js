@@ -9,22 +9,31 @@ const router = createRouter({
     routes: [
         {
             path: '/',
-            redirect: '/Home'
+            redirect: '/Home',
         },
         {
             path: '/Home',
             name: "Home",
-            component: Home
+            component: Home,
+            meta: {
+                title: "关于"
+            }
         },
         {
             path: '/Links',
             name: "Links",
-            component: Links
+            component: Links,
+            meta: {
+                title: "友情链接"
+            }
         },
         {
             path: '/Setu',
             name: "Setu",
-            component: Setu
+            component: Setu,
+            meta: {
+                title: "瑟图"
+            }
         }
     ]
 })

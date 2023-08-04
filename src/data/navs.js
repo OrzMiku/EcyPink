@@ -8,7 +8,7 @@ export default [
         path: "/Links",
     },
     {
-        text: "色图",
+        text: "瑟图",
         path: "/Setu"
     }
 ]
