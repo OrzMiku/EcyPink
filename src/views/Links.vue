@@ -7,11 +7,6 @@
 
 <script setup>
 import { defineAsyncComponent } from 'vue';
-const LinkCard = defineAsyncComponent(() => import('../components/LinkCard.vue'))
-const props = defineProps({
-    links: {
-        type: Object,
-        default: () => { }
-    }
-})
+import links from '../data/links'
+const LinkCard = defineAsyncComponent(() => import('../components/linkCard.vue'))
 </script>

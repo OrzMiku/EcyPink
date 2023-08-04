@@ -1,29 +1,27 @@
 <template>
     <nav class="nav">
-        <template v-for="(item, index) in navs" :key="item">
-            <div @click="navClick(index)" :class="{ active: currentActiveId === index }" class="nav-item">{{ item.text }}
-            </div>
+        <template v-for="item in navs" :key="item">
+            <router-link :to="item.path" class="nav-item"> {{ item.text }}</router-link>
         </template>
     </nav>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-const emits = defineEmits(['changed']);
+import { RouterLink } from 'vue-router'
+
 const props = defineProps({
     navs: {
         type: Array,
         default: () => []
     }
 });
-const currentActiveId = ref(0);
-function navClick(index) {
-    currentActiveId.value = index;
-    emits('changed', index);
-}
 </script>
 
 <style>
+a {
+    text-decoration: none;
+}
+
 .nav {
     margin: 10px 0;
 }
@@ -36,6 +34,7 @@ function navClick(index) {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
+    color: black;
 }
 
 .nav-item:hover {
@@ -43,7 +42,7 @@ function navClick(index) {
     box-shadow: 1px 1px 1px grey;
 }
 
-.nav-item.active {
+.router-link-active {
     border-bottom: 2px solid black;
 }
 </style>

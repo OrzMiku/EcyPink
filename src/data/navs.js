@@ -1,11 +1,14 @@
 export default [
     {
-        text: "关于"
+        text: "关于",
+        path: "/Home",
     },
     {
-        text: "友情链接"
+        text: "友情链接",
+        path: "/Links",
     },
     {
-        text: "色图"
+        text: "色图",
+        path: "/Setu"
     }
 ]
