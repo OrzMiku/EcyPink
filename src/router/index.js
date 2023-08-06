@@ -16,7 +16,8 @@ const router = createRouter({
             name: "Home",
             component: Home,
             meta: {
-                title: "关于"
+                title: "关于",
+                description: "神奇の赵贰的个人主页",
             }
         },
         {
@@ -24,7 +25,8 @@ const router = createRouter({
             name: "Links",
             component: Links,
             meta: {
-                title: "友情链接"
+                title: "友情链接",
+                description: "EcyPink - 友情链接",
             }
         },
         {
@@ -32,7 +34,8 @@ const router = createRouter({
             name: "Setu",
             component: Setu,
             meta: {
-                title: "瑟图"
+                title: "瑟图",
+                description: "瑟瑟哒咩！"
             }
         }
     ]
