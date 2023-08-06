@@ -4,15 +4,14 @@ import App from './App.vue'
 
 const site = {
     title: "EcyPink",
+    description: "神奇の赵贰的个人主页",
+    keywords: "神奇の赵贰,OrzMiku,个人主页,EcyPink,MikuShow",
 }
 
 router.beforeEach((to, from, next) => {
-    if (to.meta.title) {
-        document.title = site['title'] + " - " + to.meta.title
-    }
-    if (to.meta.description) {
-        document.querySelector('meta[name="description"]').setAttribute('content', to.meta.description)
-    }
+    document.title = to.meta.title ? site['title'] + " - " + to.meta.title : site['title'];
+    document.querySelector('meta[name="description"]').setAttribute('content', to.meta.description ? to.meta.description : site['description'])
+    document.querySelector('meta[name="keywords"]').setAttribute('content', to.meta.keywords ? site['keywords'] + ',' + to.meta.keywords : site['keywords'])
     next()
 })
 

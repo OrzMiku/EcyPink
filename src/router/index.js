@@ -27,6 +27,7 @@ const router = createRouter({
             meta: {
                 title: "友情链接",
                 description: "EcyPink - 友情链接",
+                keywords: "友情链接",
             }
         },
         {
@@ -35,7 +36,8 @@ const router = createRouter({
             component: Setu,
             meta: {
                 title: "瑟图",
-                description: "瑟瑟哒咩！"
+                description: "瑟瑟哒咩！",
+                keywords: "瑟图"
             }
         }
     ]
