@@ -1,13 +1,12 @@
+import mikureq from "../service/mikureq";
 
-export function getHitokoto() {
-    return new Promise(resolve => {
-        let xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://v1.hitokoto.cn/', true);
-        xhr.send();
-        xhr.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                resolve(JSON.parse(xhr.response));
-            }
-        }
+const getHitokoto = async (params) => {
+    const req = new mikureq()
+    const res = await req.get({
+        url: "https://v1.hitokoto.cn/",
+        params
     })
+    return res
 }
+
+export default getHitokoto
