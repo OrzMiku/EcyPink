@@ -30,7 +30,7 @@ const hasIcp = computed(() => {
 <style scoped>
 .footer {
     text-align: center;
-    color: #606060;
+    color: var(--theme-bg-color);
     font-weight: bolder;
 }
 </style>

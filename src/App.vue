@@ -27,11 +27,4 @@ import navs from './data/navs'
     padding: 20px;
     margin: auto;
 }
-
-a,
-a:visited,
-a:hover,
-a:active {
-    color: #39c5bb;
-}
 </style>

@@ -37,9 +37,9 @@ import tags from './data/tags'
 <style scoped>
 .head {
     display: flex;
-    background: #505050;
+    background: var(--theme-bg-color);
     height: 128px;
-    border-bottom: 3px solid #505050;
+    border-bottom: 3px solid var(--theme-bg-color);
     overflow: hidden;
 }
 
@@ -55,19 +55,19 @@ import tags from './data/tags'
     width: 128px;
     box-sizing: border-box;
     padding: 20px;
-    color: white;
+    color: var(--theme-text-color);
 }
 
 .head>.profiles>.title {
     font-size: 28px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--theme-text-color);
     margin-bottom: 5px;
 }
 
 @media screen and (max-width: 512px) {
     .head>.profiles>.title {
         font-size: 23px;
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid var(--theme-text-color);
         margin-bottom: 5px;
     }
 
@@ -77,7 +77,7 @@ import tags from './data/tags'
 }
 
 .description {
-    border: 3px solid #505050;
+    border: 3px solid var(--theme-bg-color);
     margin: 10px 0;
     transition: 0.2s;
 }
@@ -92,8 +92,8 @@ import tags from './data/tags'
 
 .description .footer {
     text-align: center;
-    background-color: #505050;
-    color: white;
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
     padding: 5px;
 }
 </style>

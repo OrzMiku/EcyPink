@@ -34,15 +34,15 @@ a {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    color: black;
+    color: var(--theme-accent-color);
 }
 
 .nav-item:hover {
     background-color: #f3f3f3;
-    box-shadow: 1px 1px 1px grey;
+    box-shadow: 1px 1px 1px var(--theme-bg-color);
 }
 
 .router-link-active {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--theme-accent-color);
 }
 </style>

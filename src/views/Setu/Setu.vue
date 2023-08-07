@@ -28,7 +28,7 @@ update()
 <style scoped>
 .img-box {
 
-    border: 3px solid #505050;
+    border: 3px solid var(--theme-bg-color);
     margin: 10px 0;
     cursor: pointer;
     user-select: none;
@@ -39,8 +39,8 @@ update()
 
 .img-box .tips {
     text-align: center;
-    background-color: #505050;
-    color: white;
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
     padding: 5px;
 }
 
