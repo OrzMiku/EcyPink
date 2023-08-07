@@ -12,13 +12,12 @@
 </template>
 
 <script setup>
-import { defineAsyncComponent } from 'vue';
 import { RouterView } from 'vue-router'
-const GG = defineAsyncComponent(() => import('./components/GG.vue'))
-const Miku = defineAsyncComponent(() => import('./components/Miku.vue'));
-const hitokoto = defineAsyncComponent(() => import('./components/Hitokoto.vue'));
-const Footer = defineAsyncComponent(() => import('./components/Footer.vue'));
-const Nav = defineAsyncComponent(() => import('./components/Nav.vue'));
+import GG from './components/GG.vue';
+import Miku from './components/Miku.vue';
+import Hitokoto from './components/Hitokoto.vue';
+import Footer from './components/Footer.vue';
+import Nav from './components/Nav.vue';
 import navs from './data/navs'
 </script>
 
