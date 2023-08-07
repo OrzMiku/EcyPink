@@ -42,9 +42,11 @@ update()
     background-color: var(--theme-bg-color);
     color: var(--theme-text-color);
     padding: 5px;
+    margin: 0;
 }
 
 img {
     width: 100%;
+    display: block;
 }
 </style>
