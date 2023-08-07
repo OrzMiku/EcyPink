@@ -29,8 +29,8 @@
 </template>
 
 <script setup>
-import Tag from '../components/Tag.vue';
-import tags from '../data/tags'
+import Tag from './components/Tag.vue';
+import tags from './data/tags'
 
 </script>
 

@@ -11,8 +11,8 @@
 
 <script setup>
 import { ref } from 'vue';
-import getSetu from '../utils/setu'
-import { isR18 } from '../utils/params'
+import getSetu from '@/utils/setu'
+import { isR18 } from '@/utils/params'
 const setu = ref("");
 const r18 = isR18();
 console.log("R18: " + r18);

@@ -1,9 +1,5 @@
 import { createWebHashHistory, createRouter } from 'vue-router'
 
-const Home = () => import('../views/About.vue')
-const Links = () => import('../views/Links.vue')
-const Setu = () => import('../views/Setu.vue')
-
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
@@ -14,7 +10,7 @@ const router = createRouter({
         {
             path: '/Home',
             name: "Home",
-            component: Home,
+            component: () => import('../views/About/About.vue'),
             meta: {
                 title: "关于",
                 description: "神奇の赵贰的个人主页",
@@ -23,7 +19,7 @@ const router = createRouter({
         {
             path: '/Links',
             name: "Links",
-            component: Links,
+            component: () => import('../views/Links/Links.vue'),
             meta: {
                 title: "友情链接",
                 description: "EcyPink - 友情链接",
@@ -33,7 +29,7 @@ const router = createRouter({
         {
             path: '/Setu',
             name: "Setu",
-            component: Setu,
+            component: () => import('../views/Setu/Setu.vue'),
             meta: {
                 title: "瑟图",
                 description: "瑟瑟哒咩！",
