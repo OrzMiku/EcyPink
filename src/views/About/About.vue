@@ -18,6 +18,11 @@
             </div>
         </div>
         <div class="body">
+            <LinkCard 
+                title="EcyMC整合包" 
+                description="我的世界原版增强整合包，极致体验。"
+                url="https://modrinth.com/modpack/ecymc/">
+            </LinkCard>
             <p>在校大学生，校园蛀虫一只。</p>
             <p>懒狗且菜比。</p>
             <p>学习计算机，但是弱鸡。</p>
@@ -30,6 +35,7 @@
 
 <script setup>
 import Tag from './components/Tag.vue';
+import LinkCard from '../Links/components/LinkCard.vue'
 import tags from './data/tags'
 
 </script>
