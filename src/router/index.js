@@ -1,4 +1,5 @@
 import { createWebHashHistory, createRouter } from 'vue-router'
+import site from '../site.config.js'
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -37,6 +38,13 @@ const router = createRouter({
             }
         }
     ]
+})
+
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title ? site['title'] + " - " + to.meta.title : site['title'];
+    document.querySelector('meta[name="description"]').setAttribute('content', to.meta.description ? to.meta.description : site['description'])
+    document.querySelector('meta[name="keywords"]').setAttribute('content', to.meta.keywords ? site['keywords'] + ',' + to.meta.keywords : site['keywords'])
+    next()
 })
 
 export default router
