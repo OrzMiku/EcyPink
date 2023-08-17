@@ -1,7 +1,12 @@
 <template>
     <nav class="nav">
         <template v-for="item in navs" :key="item">
-            <router-link :to="item.path" class="nav-item"> {{ item.text }}</router-link>
+            <template v-if="item.path">
+                <router-link :to="item.path" class="nav-item"> {{ item.text }}</router-link>
+            </template>
+            <template v-else-if="item.url">
+                <a class="nav-item extra-links" :href="item.url"> {{ item.text }}</a>
+            </template>
         </template>
     </nav>
 </template>
@@ -44,5 +49,11 @@ a {
 
 .router-link-active {
     border-bottom: 2px solid var(--theme-accent-color);
+}
+
+.extra-links::before{
+    content: "➥";
+    color: --theme-light-color;
+    font-size: 10px;
 }
 </style>
