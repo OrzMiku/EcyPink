@@ -12,15 +12,15 @@
 </template>
 
 <script setup>
-import { RouterView } from "vue-router";
-import { onMounted } from "vue";
-import { useSiteConfigStore } from "@/stores/siteConfig.js";
-import GG from "./components/GG.vue";
-import Miku from "./components/Miku.vue";
-import Hitokoto from "./components/Hitokoto.vue";
-import Footer from "./components/Footer.vue";
-import Nav from "./components/Nav.vue";
-import navs from "./data/navs";
+import { RouterView } from 'vue-router';
+import { onMounted } from 'vue';
+import { useSiteConfigStore } from '@/stores/siteConfig.js';
+import GG from './components/GG.vue';
+import Miku from './components/Miku.vue';
+import Hitokoto from './components/Hitokoto.vue';
+import Footer from './components/Footer.vue';
+import Nav from './components/Nav.vue';
+import navs from './data/navs';
 
 onMounted(() => {
   const site = useSiteConfigStore();
@@ -29,6 +29,9 @@ onMounted(() => {
   const description = site.description;
 
   const style = `
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 80px;
     background-color: rgba(57, 197, 187, 0.2);
     border-radius: 5px;
     padding: 20px;
